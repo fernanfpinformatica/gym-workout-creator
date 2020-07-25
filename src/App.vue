@@ -1,21 +1,41 @@
 <template>
   <div id="app">
-    <WorkoutHeader/>
+    <div class="workout-wrapper">
+      <WorkoutHeader/>
 
-    <div class="info-callout-wrapper">
-      <Callout
-        v-for="callout in calloutData"
-        :key="callout.title"
-        :title="callout.title"
-        :listItems="callout.listItems"
+      <div class="info-callout-wrapper">
+        <Callout
+          v-for="callout in calloutData"
+          :key="callout.title"
+          :title="callout.title"
+          :listItems="callout.listItems"
+        />
+      </div>
+
+      <ExerciseTable
+        :key="imgSrc"
+        :imgSrcList="imgSrc"
+        :colspan=4
       />
     </div>
+    <div class="workout-wrapper">
+      <WorkoutHeader/>
 
-    <ExerciseTable
-      :key="imgSrc"
-      :imgSrcList="imgSrc"
-      :colspan=4
-    />
+      <div class="info-callout-wrapper">
+        <Callout
+          v-for="callout in calloutData"
+          :key="callout.title"
+          :title="callout.title"
+          :listItems="callout.listItems"
+        />
+      </div>
+
+      <ExerciseTable
+        :key="imgSrc"
+        :imgSrcList="imgSrc"
+        :colspan=4
+      />
+    </div>
   </div>
 </template>
 
