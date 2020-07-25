@@ -43,13 +43,13 @@ export default {
   }
 
   .row.l {
-      height: 35px;
-      line-height: 35px;
+      height: 10px;
+      line-height: 10px;
   }
 
   .row.m {
-      height: 25px;
-      line-height: 25px;
+      height: 5px;
+      line-height: 5px;
   }
 
   .weekday.row {
