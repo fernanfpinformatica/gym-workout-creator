@@ -87,4 +87,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.workout-wrapper {
+  margin-bottom: 2.5rem;
+}
 </style>
