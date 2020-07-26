@@ -1,5 +1,9 @@
 <template>
   <div id="app">
+    <!--
+    -->
+    <GeneratePdf />
+
     <div class="workout-wrapper">
       <WorkoutHeader/>
 
@@ -43,13 +47,15 @@
 import WorkoutHeader from './components/WorkoutHeader.vue'
 import Callout from './components/Callout.vue'
 import ExerciseTable from './components/ExerciseTable.vue'
+import GeneratePdf from './components/GeneratePdf.vue'
 
 export default {
   name: 'App',
   components: {
     WorkoutHeader,
     Callout,
-    ExerciseTable
+    ExerciseTable,
+    GeneratePdf,
   },
   data () {
     return {
