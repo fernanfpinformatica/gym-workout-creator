@@ -14,6 +14,7 @@
 
       <ExerciseTable
         :key="imgSrc"
+        :tableTitlesList="workoutTableTitlesList"
         :imgSrcList="imgSrc"
         :colspan=colspan
       />
@@ -32,6 +33,7 @@
 
       <ExerciseTable
         :key="imgSrc"
+        :tableTitlesList="workoutTableTitlesList"
         :imgSrcList="imgSrc"
         :colspan=colspan
       />
@@ -53,6 +55,12 @@ export default {
   },
   data () {
     return {
+      workoutTableTitlesList: [
+        "Ejercicio",
+        "Series-Rep",
+        "Descanso",
+        "Peso",
+      ],
       colspan: 4,
       imgSrc: [
         "https://images.squarespace-cdn.com/content/v1/55e406fbe4b0b03c5e7543ae/1492639926499-SY6KJ6TN3ZO5W53ZAVLB/ke17ZwdGBToddI8pDm48kA--CZeMMIZvCJ1et5mufG9Zw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVF1Hxwm206IZyO_-jfK4JJz9uvwlcFs25qkudxW7Q1inTbuQio6mPVtJnWWmEQSq6s/Flat+Barbell+Chest+Press",

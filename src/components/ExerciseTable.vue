@@ -2,17 +2,11 @@
   <table class="workout-schedule" border="1" cellspacing="0" cellpadding="0" width="99%">
     <tbody>
       <tr class="table-header" id="exercise-table-titles">
-        <td valign="top">
-          <p>Ejercicio</p>
-        </td>
-        <td valign="top">
-          <p>Series-Rep</p>
-        </td>
-        <td valign="top">
-          <p>Descanso</p>
-        </td>
-        <td :colspan="colspan" valign="top">
-          <p>Peso</p>
+        <td v-for="(tableTitle,index) of tableTitlesList" :key="index"
+            valign="top"
+            :colspan="(index === ( Object.keys(tableTitlesList).length - 1 ) ) ? colspan : 0"
+        >
+          <p>{{ tableTitle }}</p>
         </td>
       </tr>
       <ExerciseRow
@@ -34,11 +28,9 @@ export default {
     ExerciseRow
   },
   props: {
+    tableTitlesList: Array,
     imgSrcList: Array,
-    colspan: {
-      type: Number,
-      default: 4
-    }
+    colspan: Number,
   }
 }
 </script>
