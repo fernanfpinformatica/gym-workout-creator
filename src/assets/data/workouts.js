@@ -329,22 +329,22 @@ const workouts = {
     workoutTableData: {
       exercises: [
         {
+          imgSrc: require('./../img/Chest/image--053.jpg')
+        },
+        {
+          imgSrc: "https://espowerlifting.com/wp-content/uploads/2018/11/sentadillas-sin-pesos.jpg"
+        },
+        {
+          imgSrc: require('./../img/Abs+Core/image--050.jpg')
+        },
+        {
+          imgSrc: require('./../img/Triceps/image--007.jpg')
+        },
+        {
+          imgSrc: require('./../img/UpperLegs+Glutes/image--010.jpg')
+        },
+        {
           imgSrc: require('./../img/Chest/image--015.jpg')
-        },
-        {
-          imgSrc: require('./../img/UpperLegs+Glutes/image--017.jpg')
-        },
-        {
-          imgSrc: require('./../img/Abs+Core/image--016.jpg')
-        },
-        {
-          imgSrc: require('./../img/Back+Lats/image--024.jpg')
-        },
-        {
-          imgSrc: require('./../img/Forearms+Calves/image--013.jpg')
-        },
-        {
-          imgSrc: require('./../img/Forearms+Calves/image--012.jpg')
         },
       ]
     },
