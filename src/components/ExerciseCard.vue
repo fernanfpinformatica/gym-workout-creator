@@ -1,7 +1,7 @@
 <template>
-  <div class="exercise-img-wrapper">
+  <div class="exercise-wrapper">
     <img :src="exercise.imgSrc" />
-    <p class="exercise-name">Nombre del ejercicio</p>
+    <div class="exercise-name"></div>
   </div>
 </template>
 
@@ -16,24 +16,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .workout-schedule tr td img {
-      display: inline-block;
-      vertical-align: middle;
-      max-height: 110px;
-      max-width: 210px;
+  .exercise-wrapper {
+    text-align: center;
   }
 
-  .workout-schedule .exercise-divider {
-      display: inline-block;
-      vertical-align: middle;
-      width: 10%;
-      font-size: .8rem;
+  img {
+    max-height: 250px;
+    max-width: 350px;
   }
 
-  .workout-schedule tr.exercise td p {
-      margin: .1rem 0;
-      display: inline-block;
-      width: 49%;
-      text-align: center;
+  .exercise-name {
+    background-color: lightgray;
+    min-height: 1.5rem;
+    margin: 1rem 0 .5rem;
   }
 </style>

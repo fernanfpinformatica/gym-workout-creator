@@ -24,5 +24,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  
+  .workout-schedule {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-gap: 1rem;
+    flex-wrap: wrap;
+  }
 </style>
