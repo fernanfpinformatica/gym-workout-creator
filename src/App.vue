@@ -11,7 +11,7 @@
 import Workout from './components/Workout.vue'
 import workouts from './assets/data/workouts.js'
 
-const workoutSelector = "torsoPierna";
+const workoutSelector = "dividedRoutineDay7";
 
 export default {
   name: 'App',
