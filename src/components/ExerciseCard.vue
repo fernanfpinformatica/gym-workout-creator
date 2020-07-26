@@ -21,13 +21,13 @@ export default {
   }
 
   img {
-    max-height: 250px;
-    max-width: 350px;
+    max-height: 230px;
+    max-width: 330px;
   }
 
   .exercise-name {
     border: 2px solid lightgray;
-    min-height: 1.5rem;
+    min-height: 2rem;
     margin: 1rem 0 .5rem;
   }
 </style>
