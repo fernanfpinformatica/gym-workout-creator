@@ -11,10 +11,14 @@
       />
     </div>
 
-    <ExerciseTable
+    <ExerciseTable v-if="!workout.type || workout.type !== 'cards'"
       :tableTitlesList="workout.workoutTableData.titlesList"
       :exerciseList="workout.workoutTableData.exercises"
       :weightColumnColespan=workout.workoutTableData.weightColumnColespan
+    />
+
+    <ExerciseCardList v-if="workout.type && workout.type === 'cards'"
+      :exerciseList="workout.workoutTableData.exercises"
     />
   </div>
 </template>
@@ -23,13 +27,15 @@
 import WorkoutHeader from './WorkoutHeader.vue'
 import Callout from './Callout.vue'
 import ExerciseTable from './ExerciseTable.vue'
+import ExerciseCardList from './ExerciseCardList.vue'
 
 export default {
   name: 'Workout',
   components: {
     WorkoutHeader,
     Callout,
-    ExerciseTable
+    ExerciseTable,
+    ExerciseCardList
   },
   props: {
     workout: Object,

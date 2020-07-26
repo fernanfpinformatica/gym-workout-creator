@@ -324,6 +324,46 @@ const workouts = {
       }
     ]
   },
+  womenBeginner: {
+    type: "cards",
+    workoutTableData: {
+      exercises: [
+        {
+          imgSrc: require('./../img/Chest/image--015.jpg')
+        },
+        {
+          imgSrc: require('./../img/UpperLegs+Glutes/image--017.jpg')
+        },
+        {
+          imgSrc: require('./../img/Abs+Core/image--016.jpg')
+        },
+        {
+          imgSrc: require('./../img/Back+Lats/image--024.jpg')
+        },
+        {
+          imgSrc: require('./../img/Forearms+Calves/image--013.jpg')
+        },
+        {
+          imgSrc: require('./../img/Forearms+Calves/image--012.jpg')
+        },
+      ]
+    },
+    calloutData: [
+      {
+        title: "🔥 Calentamiento:",
+        listItems: [
+          "5 minutos de cardio (bicicleta estática, elíptica o carrera)",
+          "2 minutos de movilidad articular"
+        ]
+      },
+      {
+        title: "🤸 Después del entrenamiento:",
+        listItems: [
+          "Estiramientos de cada grupo muscular durante 8-10 minutos"
+        ]
+      }
+    ]
+  },
 }
 
   export default workouts;
