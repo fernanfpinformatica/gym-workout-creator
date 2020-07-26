@@ -9,7 +9,7 @@
         </option>
       </select>
     </div>
-    <button @click='showPrintVersionWorkout()'>Mostrar tabla para imprimir</button>
+    <button @click='showPrintVersionWorkout()'>Actualizar rutina</button>
   </div>
 </template>
 
