@@ -384,13 +384,136 @@ const workouts = {
           imgSrc: require('./../img/Chest/image--053.jpg')
         },
         {
-          imgSrc: require('./../img/Triceps/image--007.jpg')
+          imgSrc: require('./../img/UpperLegs+Glutes/image--010.jpg')
+        },
+        {
+          imgSrc: require('./../img/Back+Lats/image--021.jpg')
+        },
+        {
+          imgSrc: require('./../img/Shoulders/image--008.jpg')
+        },
+      ]
+    },
+    calloutData: [
+      {
+        title: "🔥 Calentamiento:",
+        listItems: [
+          "5 minutos de cardio (bicicleta estática, elíptica o carrera)",
+          "2 minutos de movilidad articular"
+        ]
+      },
+      {
+        title: "🤸 Después del entrenamiento:",
+        listItems: [
+          "Estiramientos de cada grupo muscular durante 8-10 minutos"
+        ]
+      }
+    ]
+  },
+  womenBeginnerPlanDay1: {
+    type: "cards",
+    workoutTableData: {
+      exercises: [
+        {
+          imgSrc: require('./../img/UpperLegs+Glutes/image--005.jpg')
+        },
+        {
+          imgSrc: require('./../img/UpperLegs+Glutes/image--010.jpg')
+        },
+        {
+          imgSrc: require('./../img/UpperLegs+Glutes/image--063.jpg')
+        },
+        {
+          imgSrc: require('./../img/UpperLegs+Glutes/image--024.jpg')
+        },
+        {
+          imgSrc: require('./../img/Chest/image--009.jpg')
+        },
+        {
+          imgSrc: require('./../img/Back+Lats/image--045.jpg')
+        },
+        {
+          imgSrc: require('./../img/Back+Lats/image--030.jpg')
+        },
+      ]
+    },
+    calloutData: [
+      {
+        title: "🔥 Calentamiento:",
+        listItems: [
+          "5 minutos de cardio (bicicleta estática, elíptica o carrera)",
+          "2 minutos de movilidad articular"
+        ]
+      },
+      {
+        title: "🤸 Después del entrenamiento:",
+        listItems: [
+          "Estiramientos de cada grupo muscular durante 8-10 minutos"
+        ]
+      }
+    ]
+  },
+  womenBeginnerPlanDay2: {
+    type: "cards",
+    workoutTableData: {
+      exercises: [
+        {
+          imgSrc: require('./../img/Shoulders/image--008.jpg')
+        },
+        {
+          imgSrc: require('./../img/Back+Lats/image--009.jpg')
+        },
+        {
+          imgSrc: require('./../img/Chest/image--011.jpg')
+        },
+        {
+          imgSrc: require('./../img/Forearms+Calves/image--012.jpg')
+        },
+        {
+          imgSrc: require('./../img/Abs+Core/abs-core-generic.jpg')
+        },
+        {
+          imgSrc: "data:image/png;base64,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"
+        },
+      ]
+    },
+    calloutData: [
+      {
+        title: "🔥 Calentamiento:",
+        listItems: [
+          "5 minutos de cardio (bicicleta estática, elíptica o carrera)",
+          "2 minutos de movilidad articular"
+        ]
+      },
+      {
+        title: "🤸 Después del entrenamiento:",
+        listItems: [
+          "Estiramientos de cada grupo muscular durante 8-10 minutos"
+        ]
+      }
+    ]
+  },
+  calisthenicsTest: {
+    type: "cards",
+    workoutTableData: {
+      exercises: [
+        {
+          imgSrc: require('./../img/Aerobic/jumping-jacks.png')
+        },
+        {
+          imgSrc: require('./../img/UpperLegs+Glutes/image--010.jpg')
         },
         {
           imgSrc: require('./../img/Chest/image--053.jpg')
         },
         {
-          imgSrc: require('./../img/Chest/image--015.jpg')
+          imgSrc: require('./../img/Triceps/image--007.jpg')
+        },
+        {
+          imgSrc: require('./../img/Back+Lats/image--039.jpg')
+        },
+        {
+          imgSrc: require('./../img/Abs+Core/image--026.jpg')
         },
       ]
     },
