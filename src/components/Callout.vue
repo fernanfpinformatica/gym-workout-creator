@@ -50,7 +50,6 @@ export default {
 
   .info-callout-wrapper .info-callout-cell table {
       margin: 1rem auto;
-      min-width: 442px;
       height: 72px;
       line-height: 0.85;
   }
