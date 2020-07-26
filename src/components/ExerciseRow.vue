@@ -3,7 +3,7 @@
     <td>
       <div class="exercise-img-wrapper">
         <img
-            :src="imgSrc" />
+            :src="exercise.imgSrc" />
       </div>
     </td>
     <td> </td>
@@ -16,7 +16,7 @@
 export default {
   name: 'ExerciseRow',
   props: {
-    imgSrc: String,
+    exercise: Object,
     weightColumnColespan: Number
   }
 }

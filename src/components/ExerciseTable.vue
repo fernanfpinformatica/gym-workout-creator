@@ -10,10 +10,10 @@
         </td>
       </tr>
       <ExerciseRow
-        v-for="img in exerciseList"
-        :key="img.imgSrc"
-        :imgSrc="img.imgSrc"
-        :colspan="colspan"
+        v-for="exercise in exerciseList"
+        :key="exercise.imgSrc"
+        :exercise="exercise"
+        :weightColumnColespan="weightColumnColespan"
       />
     </tbody>
   </table>
