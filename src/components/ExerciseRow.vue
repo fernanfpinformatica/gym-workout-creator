@@ -34,10 +34,7 @@ export default {
       width: 10%;
   }
 
-  td:nth-child(4),
-  td:nth-child(5),
-  td:nth-child(6),
-  td:nth-child(7) {
+  td:nth-child(n+4) {
       width: 12.5%;
   }
 
