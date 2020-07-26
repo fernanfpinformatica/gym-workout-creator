@@ -3,12 +3,12 @@
     <td>
       <div class="exercise-img-wrapper">
         <img
-            :src="imgSrc" />
+            :src="exercise.imgSrc" />
       </div>
     </td>
     <td> </td>
     <td> </td>
-    <td v-for="index in colspan" :key="index"></td>
+    <td v-for="index in weightColumnColespan" :key="index"></td>
   </tr>
 </template>
 
@@ -16,8 +16,8 @@
 export default {
   name: 'ExerciseRow',
   props: {
-    imgSrc: String,
-    colspan: Number
+    exercise: Object,
+    weightColumnColespan: Number
   }
 }
 </script>
@@ -34,10 +34,7 @@ export default {
       width: 10%;
   }
 
-  td:nth-child(4),
-  td:nth-child(5),
-  td:nth-child(6),
-  td:nth-child(7) {
+  td:nth-child(n+4) {
       width: 12.5%;
   }
 
