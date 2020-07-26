@@ -31,22 +31,22 @@ export default {
             weightColumnColespan: 4,
             exercises: [
               {
-                imgSrc: require('./assets/img/Back+Lats/image--005.jpg')
+                imgSrc: require('./assets/img/Chest/image--009.jpg')
               },
               {
-                imgSrc: require('./assets/img/Back+Lats/image--005.jpg')
+                imgSrc: require('./assets/img/Chest/image--011.jpg')
               },
               {
-                imgSrc: require('./assets/img/Back+Lats/image--005.jpg')
+                imgSrc: require('./assets/img/Shoulders/image--008.jpg')
               },
               {
-                imgSrc: require('./assets/img/Back+Lats/image--005.jpg')
+                imgSrc: require('./assets/img/Shoulders/image--060.jpg')
               },
               {
-                imgSrc: require('./assets/img/Back+Lats/image--005.jpg')
+                imgSrc: require('./assets/img/UpperLegs+Glutes/image--005.jpg')
               },
               {
-                imgSrc: require('./assets/img/Back+Lats/image--005.jpg')
+                imgSrc: require('./assets/img/Abs+Core/image--016.jpg')
               },
             ]
           },
@@ -77,22 +77,22 @@ export default {
             weightColumnColespan: 4,
             exercises: [
               {
-                imgSrc: require('./assets/img/Back+Lats/image--005.jpg')
+                imgSrc: require('./assets/img/Chest/image--009.jpg')
               },
               {
-                imgSrc: require('./assets/img/Back+Lats/image--006.jpg')
+                imgSrc: require('./assets/img/Chest/image--011.jpg')
               },
               {
-                imgSrc: require('./assets/img/Back+Lats/image--007.jpg')
+                imgSrc: require('./assets/img/Shoulders/image--008.jpg')
               },
               {
-                imgSrc: require('./assets/img/Back+Lats/image--008.jpg')
+                imgSrc: require('./assets/img/Shoulders/image--060.jpg')
               },
               {
-                imgSrc: require('./assets/img/Back+Lats/image--005.jpg')
+                imgSrc: require('./assets/img/UpperLegs+Glutes/image--005.jpg')
               },
               {
-                imgSrc: require('./assets/img/Back+Lats/image--005.jpg')
+                imgSrc: require('./assets/img/Abs+Core/image--016.jpg')
               },
             ]
           },
