@@ -8,7 +8,7 @@
     </td>
     <td> </td>
     <td> </td>
-    <td v-for="index in colspan" :key="index"></td>
+    <td v-for="index in weightColumnColespan" :key="index"></td>
   </tr>
 </template>
 
@@ -17,7 +17,7 @@ export default {
   name: 'ExerciseRow',
   props: {
     imgSrc: String,
-    colspan: Number
+    weightColumnColespan: Number
   }
 }
 </script>

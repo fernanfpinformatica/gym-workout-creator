@@ -13,10 +13,9 @@
       </div>
 
       <ExerciseTable
-        :key="imgSrc"
         :tableTitlesList="workoutTableData.titlesList"
         :exerciseList="workoutTableData.exercises"
-        :colspan=workoutTableData.colspan
+        :weightColumnColespan=workoutTableData.weightColumnColespan
       />
     </div>
     <div class="workout-wrapper">
@@ -32,10 +31,9 @@
       </div>
 
       <ExerciseTable
-        :key="imgSrc"
         :tableTitlesList="workoutTableData.titlesList"
         :exerciseList="workoutTableData.exercises"
-        :colspan=workoutTableData.colspan
+        :weightColumnColespan=workoutTableData.weightColumnColespan
       />
     </div>
   </div>
@@ -62,7 +60,7 @@ export default {
           "Descanso",
           "Peso",
         ],
-        colspan: 4,
+        weightColumnColespan: 4,
         exercises: [
           {
             imgSrc: require('./assets/img/Back+Lats/image--005.jpg')

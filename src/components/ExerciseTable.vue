@@ -4,7 +4,7 @@
       <tr class="table-header" id="exercise-table-titles">
         <td v-for="(tableTitle,index) of tableTitlesList" :key="index"
             valign="top"
-            :colspan="(index === ( Object.keys(tableTitlesList).length - 1 ) ) ? colspan : 0"
+            :colspan="(index === ( Object.keys(tableTitlesList).length - 1 ) ) ? weightColumnColespan : 0"
         >
           <p>{{ tableTitle }}</p>
         </td>
@@ -30,7 +30,7 @@ export default {
   props: {
     tableTitlesList: Array,
     exerciseList: Array,
-    colspan: Number,
+    weightColumnColespan: Number,
   }
 }
 </script>
