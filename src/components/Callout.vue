@@ -1,19 +1,13 @@
 <template>
   <div class="info-callout-cell">
-    <table class="info callout" cellspacing="0" cellpadding="0">
-      <tbody>
-        <tr>
-          <td valign="top">
-            <p class="title">{{ title }}</p>
-            <ul>
-              <li v-for="item in listItems" :key="item.id">
-                <p>{{ item }}</p>
-              </li>
-            </ul>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="info callout">
+      <p class="title">{{ title }}</p>
+      <ul>
+        <li v-for="item in listItems" :key="item.id">
+          <p>{{ item }}</p>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -48,21 +42,16 @@ export default {
       vertical-align: middle;
   }
 
-  .info-callout-wrapper .info-callout-cell table {
-      margin: 1rem auto;
-      height: 72px;
-      line-height: 0.85;
-  }
-
   .info.callout {
       max-width: 340px;
-      margin: 1rem 0;
       padding: .5rem;
       border: 1px solid black;
       background-color: lightgray;
       text-indent: 0.5rem;
       font-size: .8rem;
       max-width: 450px;
+      margin: 1rem auto;
+      line-height: 0.85;
   }
 
   .info.callout td p+p {
