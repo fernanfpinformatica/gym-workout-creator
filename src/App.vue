@@ -15,7 +15,7 @@
       <ExerciseTable
         :key="imgSrc"
         :imgSrcList="imgSrc"
-        :colspan=4
+        :colspan=colspan
       />
     </div>
     <div class="workout-wrapper">
@@ -33,7 +33,7 @@
       <ExerciseTable
         :key="imgSrc"
         :imgSrcList="imgSrc"
-        :colspan=4
+        :colspan=colspan
       />
     </div>
   </div>
@@ -53,6 +53,7 @@ export default {
   },
   data () {
     return {
+      colspan: 4,
       imgSrc: [
         "https://images.squarespace-cdn.com/content/v1/55e406fbe4b0b03c5e7543ae/1492639926499-SY6KJ6TN3ZO5W53ZAVLB/ke17ZwdGBToddI8pDm48kA--CZeMMIZvCJ1et5mufG9Zw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVF1Hxwm206IZyO_-jfK4JJz9uvwlcFs25qkudxW7Q1inTbuQio6mPVtJnWWmEQSq6s/Flat+Barbell+Chest+Press",
         "https://images.squarespace-cdn.com/content/v1/55e406fbe4b0b03c5e7543ae/1492675344310-NPZ7AD7KAENZR88289ZR/ke17ZwdGBToddI8pDm48kOu_umM5xYaUXSes57xj8BlZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGj2fmHITMhmmP-HNrXPt0-KgIKUgpERTQ2FmiuRFqB0zn75LfaXcLI4pX9TKGf4Uw/Wide+Grip+Overhand+Chin+Ups",
@@ -89,6 +90,6 @@ export default {
 }
 
 .workout-wrapper {
-  margin-bottom: 2.5rem;
+  margin: 1rem 0 2.5rem;
 }
 </style>

@@ -11,7 +11,7 @@
         <td valign="top">
           <p>Descanso</p>
         </td>
-        <td colspan="4" valign="top">
+        <td :colspan="colspan" valign="top">
           <p>Peso</p>
         </td>
       </tr>
@@ -21,11 +21,6 @@
         :imgSrc="img"
         :colspan="colspan"
       />
-      <!--
-      <tr v-for="img in imgSrcList" v-bind:key="img">
-        <ExerciseRow :imgSrc="img" :colspan="colspan"/>
-      </tr>
-      -->
     </tbody>
   </table>
 </template>
