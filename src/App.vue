@@ -1,22 +1,24 @@
 <template>
   <div id="app">
-    <Workout v-for="index in workoutsPerPage" :key="index"
-             :calloutData="workout.calloutData"
-             :workoutTableData="workout.workoutTableData"
+    <WorkoutSelector class="no-print" @workoutSelected="updateWorkout" />
+    <Workout v-model="workout" v-for="index in workoutsPerPage" :key="index"
+             :workout="workout"
     />
   </div>
 </template>
 
 <script>
 import Workout from './components/Workout.vue'
+import WorkoutSelector from './components/WorkoutSelector.vue'
 import workouts from './assets/data/workouts.js'
 
-const workoutSelector = "dividedRoutineDay7";
+const workoutKeyname = "dividedRoutineDay7";
 
 export default {
   name: 'App',
   components: {
     Workout,
+    WorkoutSelector,
   },
   data () {
     return {
@@ -24,7 +26,12 @@ export default {
         type: Number,
         default: 2
       },
-      workout: workouts[ `${workoutSelector}` ]
+      workout: workouts[ `${workoutKeyname}` ]
+    }
+  },
+  methods: {
+    updateWorkout( keyname ) {
+      this.workout = workouts[ `${keyname}` ];
     }
   }
 }
@@ -35,5 +42,12 @@ export default {
   font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media print {
+   .no-print {
+      display: none;
+      visibility: hidden;
+   }
 }
 </style>

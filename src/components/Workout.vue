@@ -4,7 +4,7 @@
 
     <div class="info-callout-wrapper">
       <Callout
-        v-for="callout in calloutData"
+        v-for="callout in workout.calloutData"
         :key="callout.title"
         :title="callout.title"
         :listItems="callout.listItems"
@@ -12,9 +12,9 @@
     </div>
 
     <ExerciseTable
-      :tableTitlesList="workoutTableData.titlesList"
-      :exerciseList="workoutTableData.exercises"
-      :weightColumnColespan=workoutTableData.weightColumnColespan
+      :tableTitlesList="workout.workoutTableData.titlesList"
+      :exerciseList="workout.workoutTableData.exercises"
+      :weightColumnColespan=workout.workoutTableData.weightColumnColespan
     />
   </div>
 </template>
@@ -32,8 +32,7 @@ export default {
     ExerciseTable
   },
   props: {
-    calloutData: Array,
-    workoutTableData: Object,
+    workout: Object,
   }
 }
 </script>
