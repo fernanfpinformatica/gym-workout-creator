@@ -324,7 +324,7 @@ const workouts = {
       }
     ]
   },
-  womenBeginner: {
+  calisthenicsBeginner: {
     type: "cards",
     workoutTableData: {
       exercises: [
@@ -342,6 +342,52 @@ const workouts = {
         },
         {
           imgSrc: require('./../img/UpperLegs+Glutes/image--010.jpg')
+        },
+        {
+          imgSrc: require('./../img/Chest/image--015.jpg')
+        },
+      ]
+    },
+    calloutData: [
+      {
+        title: "🔥 Calentamiento:",
+        listItems: [
+          "5 minutos de cardio (bicicleta estática, elíptica o carrera)",
+          "2 minutos de movilidad articular"
+        ]
+      },
+      {
+        title: "🤸 Después del entrenamiento:",
+        listItems: [
+          "Estiramientos de cada grupo muscular durante 8-10 minutos"
+        ]
+      }
+    ]
+  },
+  womenBeginner: {
+    workoutTableData: {
+      titlesList: [
+        "Ejercicio",
+        "Series-Rep",
+        "Descanso",
+        "Peso",
+      ],
+      weightColumnColespan: 4,
+      exercises: [
+        {
+          imgSrc: require('./../img/UpperLegs+Glutes/image--005.jpg')
+        },
+        {
+          imgSrc: require('./../img/Back+Lats/image--009.jpg')
+        },
+        {
+          imgSrc: require('./../img/Chest/image--053.jpg')
+        },
+        {
+          imgSrc: require('./../img/Triceps/image--007.jpg')
+        },
+        {
+          imgSrc: require('./../img/Chest/image--053.jpg')
         },
         {
           imgSrc: require('./../img/Chest/image--015.jpg')
