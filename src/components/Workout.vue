@@ -32,7 +32,7 @@ export default {
     ExerciseTable
   },
   props: {
-    calloutData: Object,
+    calloutData: Array,
     workoutTableData: Object,
   }
 }

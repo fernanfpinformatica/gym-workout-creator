@@ -1,16 +1,17 @@
 <template>
   <div id="app">
-    <Workout
-      v-for="workout in workouts"
-      :key="workout"
-      :calloutData="workout.calloutData"
-      :workoutTableData="workout.workoutTableData"
+    <Workout v-for="index in workoutsPerPage" :key="index"
+             :calloutData="workout.calloutData"
+             :workoutTableData="workout.workoutTableData"
     />
   </div>
 </template>
 
 <script>
 import Workout from './components/Workout.vue'
+import workouts from './assets/data/workouts.js'
+
+const workoutSelector = "torsoPierna";
 
 export default {
   name: 'App',
@@ -19,100 +20,11 @@ export default {
   },
   data () {
     return {
-      workouts: [
-        {
-          workoutTableData: {
-            titlesList: [
-              "Ejercicio",
-              "Series-Rep",
-              "Descanso",
-              "Peso",
-            ],
-            weightColumnColespan: 4,
-            exercises: [
-              {
-                imgSrc: require('./assets/img/Chest/image--009.jpg')
-              },
-              {
-                imgSrc: require('./assets/img/Chest/image--011.jpg')
-              },
-              {
-                imgSrc: require('./assets/img/Shoulders/image--008.jpg')
-              },
-              {
-                imgSrc: require('./assets/img/Shoulders/image--060.jpg')
-              },
-              {
-                imgSrc: require('./assets/img/UpperLegs+Glutes/image--005.jpg')
-              },
-              {
-                imgSrc: require('./assets/img/Abs+Core/image--016.jpg')
-              },
-            ]
-          },
-          calloutData: [
-            {
-              title: "🔥 Calentamiento:",
-              listItems: [
-                "5 minutos de cardio (bicicleta estática, elíptica o carrera)",
-                "2 minutos de movilidad articular"
-              ]
-            },
-            {
-              title: "🤸 Después del entrenamiento:",
-              listItems: [
-                "Estiramientos de cada grupo muscular durante 8-10 minutos"
-              ]
-            }
-          ]
-        },
-        {
-          workoutTableData: {
-            titlesList: [
-              "Ejercicio",
-              "Series-Rep",
-              "Descanso",
-              "Peso",
-            ],
-            weightColumnColespan: 4,
-            exercises: [
-              {
-                imgSrc: require('./assets/img/Chest/image--009.jpg')
-              },
-              {
-                imgSrc: require('./assets/img/Chest/image--011.jpg')
-              },
-              {
-                imgSrc: require('./assets/img/Shoulders/image--008.jpg')
-              },
-              {
-                imgSrc: require('./assets/img/Shoulders/image--060.jpg')
-              },
-              {
-                imgSrc: require('./assets/img/UpperLegs+Glutes/image--005.jpg')
-              },
-              {
-                imgSrc: require('./assets/img/Abs+Core/image--016.jpg')
-              },
-            ]
-          },
-          calloutData: [
-            {
-              title: "🔥 Calentamiento:",
-              listItems: [
-                "5 minutos de cardio (bicicleta estática, elíptica o carrera)",
-                "2 minutos de movilidad articular"
-              ]
-            },
-            {
-              title: "🤸 Después del entrenamiento:",
-              listItems: [
-                "Estiramientos de cada grupo muscular durante 8-10 minutos"
-              ]
-            }
-          ]
-        }
-      ]
+      workoutsPerPage: {
+        type: Number,
+        default: 2
+      },
+      workout: workouts[ `${workoutSelector}` ]
     }
   }
 }
