@@ -10,9 +10,9 @@
         </td>
       </tr>
       <ExerciseRow
-        v-for="img in imgSrcList"
-        :key="img"
-        :imgSrc="img"
+        v-for="img in exerciseList"
+        :key="img.imgSrc"
+        :imgSrc="img.imgSrc"
         :colspan="colspan"
       />
     </tbody>
@@ -29,7 +29,7 @@ export default {
   },
   props: {
     tableTitlesList: Array,
-    imgSrcList: Array,
+    exerciseList: Array,
     colspan: Number,
   }
 }

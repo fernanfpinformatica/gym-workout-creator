@@ -14,9 +14,9 @@
 
       <ExerciseTable
         :key="imgSrc"
-        :tableTitlesList="workoutTableTitlesList"
-        :imgSrcList="imgSrc"
-        :colspan=colspan
+        :tableTitlesList="workoutTableData.titlesList"
+        :exerciseList="workoutTableData.exercises"
+        :colspan=workoutTableData.colspan
       />
     </div>
     <div class="workout-wrapper">
@@ -33,9 +33,9 @@
 
       <ExerciseTable
         :key="imgSrc"
-        :tableTitlesList="workoutTableTitlesList"
-        :imgSrcList="imgSrc"
-        :colspan=colspan
+        :tableTitlesList="workoutTableData.titlesList"
+        :exerciseList="workoutTableData.exercises"
+        :colspan=workoutTableData.colspan
       />
     </div>
   </div>
@@ -55,21 +55,35 @@ export default {
   },
   data () {
     return {
-      workoutTableTitlesList: [
-        "Ejercicio",
-        "Series-Rep",
-        "Descanso",
-        "Peso",
-      ],
-      colspan: 4,
-      imgSrc: [
-        require('./assets/img/Back+Lats/image--005.jpg'),
-        require('./assets/img/Back+Lats/image--005.jpg'),
-        require('./assets/img/Back+Lats/image--005.jpg'),
-        require('./assets/img/Back+Lats/image--005.jpg'),
-        require('./assets/img/Back+Lats/image--005.jpg'),
-        require('./assets/img/Back+Lats/image--005.jpg'),
-      ],
+      workoutTableData: {
+        titlesList: [
+          "Ejercicio",
+          "Series-Rep",
+          "Descanso",
+          "Peso",
+        ],
+        colspan: 4,
+        exercises: [
+          {
+            imgSrc: require('./assets/img/Back+Lats/image--005.jpg')
+          },
+          {
+            imgSrc: require('./assets/img/Back+Lats/image--005.jpg')
+          },
+          {
+            imgSrc: require('./assets/img/Back+Lats/image--005.jpg')
+          },
+          {
+            imgSrc: require('./assets/img/Back+Lats/image--005.jpg')
+          },
+          {
+            imgSrc: require('./assets/img/Back+Lats/image--005.jpg')
+          },
+          {
+            imgSrc: require('./assets/img/Back+Lats/image--005.jpg')
+          },
+        ]
+      },
       calloutData: [
         {
           title: "🔥 Calentamiento:",
