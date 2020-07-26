@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <Workout
-      v-for="workout in workouts"
-      :key="workout"
-      :calloutData="workout.calloutData"
-      :workoutTableData="workout.workoutTableData"
+    <Workout v-for="index in workoutsPerPage" :key="index"
+             :calloutData="workout.calloutData"
+             :workoutTableData="workout.workoutTableData"
     />
   </div>
 </template>
 
 <script>
 import Workout from './components/Workout.vue'
-import workoutsData from './assets/data/torso-pierna.js'
+import workouts from './assets/data/workouts.js'
+
+const workoutSelector = "torsoPierna";
 
 export default {
   name: 'App',
@@ -20,7 +20,11 @@ export default {
   },
   data () {
     return {
-      workouts: workoutsData
+      workoutsPerPage: {
+        type: Number,
+        default: 2
+      },
+      workout: workouts[ `${workoutSelector}` ]
     }
   }
 }
