@@ -535,7 +535,6 @@ const workouts = {
   },
   women8WeeksPlanDay1: {
     workoutTableData: {
-      type: "cards",
       titlesList: [
         "Ejercicio",
         "Series-Rep",
@@ -579,7 +578,6 @@ const workouts = {
   },
   women8WeeksPlanDay2: {
     workoutTableData: {
-      type: "cards",
       titlesList: [
         "Ejercicio",
         "Series-Rep",
@@ -623,7 +621,6 @@ const workouts = {
   },
   women8WeeksPlanDay3: {
     workoutTableData: {
-      type: "cards",
       titlesList: [
         "Ejercicio",
         "Series-Rep",
@@ -664,7 +661,6 @@ const workouts = {
   },
   women8WeeksPlanDay4: {
     workoutTableData: {
-      type: "cards",
       titlesList: [
         "Ejercicio",
         "Series-Rep",
@@ -711,7 +707,6 @@ const workouts = {
   },
   women8WeeksPlanDay5: {
     workoutTableData: {
-      type: "cards",
       titlesList: [
         "Ejercicio",
         "Series-Rep",
@@ -752,7 +747,6 @@ const workouts = {
   },
   women8WeeksPlanDay6: {
     workoutTableData: {
-      type: "cards",
       titlesList: [
         "Ejercicio",
         "Series-Rep",
@@ -783,6 +777,52 @@ const workouts = {
         title: "🔥 Calentamiento:",
         listItems: [
           "10 minutos de cardio (bicicleta estática, elíptica o carrera)",
+          "2 minutos de movilidad articular",
+        ]
+      },
+      {
+        title: "🤸 Después del entrenamiento:",
+        listItems: [
+          "Estiramientos de cada grupo muscular durante 8-10 minutos"
+        ]
+      }
+    ]
+  },
+  fullBodyNormal: {
+    workoutTableData: {
+      titlesList: [
+        "Ejercicio",
+        "Series-Rep",
+        "Descanso",
+        "Peso",
+      ],
+      weightColumnColespan: 4,
+      exercises: [
+        {
+          imgSrc: require('./../img/Chest/image--010.jpg')
+        },
+        {
+          imgSrc: require('./../img/Back+Lats/image--005.jpg')
+        },
+        {
+          imgSrc: require('./../img/Biceps/image--030.jpg')
+        },
+        {
+          imgSrc: require('./../img/Triceps/image--015.jpg')
+        },
+        {
+          imgSrc: require('./../img/UpperLegs+Glutes/image--005.jpg')
+        },
+        {
+          imgSrc: require('./../img/UpperLegs+Glutes/image--017.jpg')
+        },
+      ]
+    },
+    calloutData: [
+      {
+        title: "🔥 Calentamiento:",
+        listItems: [
+          "5 minutos de cardio (bicicleta estática, elíptica o carrera)",
           "2 minutos de movilidad articular",
         ]
       },
