@@ -2,14 +2,13 @@
   <div id="workout-selector-component">
     <div class="workout-selector-form">
       <label for="workout-selector">Rutina:</label>
-      <select v-model="selected" id="workout-selector">
+      <select v-model="selected" @change="showPrintVersionWorkout()" id="workout-selector">
         <option v-for="(workout, index) in workoutKeynames" v-bind:key="index"
                 v-bind:value="workout">
                 {{ workout }}
         </option>
       </select>
     </div>
-    <button @click='showPrintVersionWorkout()'>Actualizar rutina</button>
   </div>
 </template>
 
