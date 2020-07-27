@@ -2,8 +2,8 @@
   <tr>
     <td>
       <div class="exercise-img-wrapper">
-        <img
-            :src="exercise.imgSrc" />
+        <img v-if="!exercise.title" :src="exercise.imgSrc" />
+        <p class="exercise-title" v-if="exercise.title">{{ exercise.title }}</p>
       </div>
     </td>
     <td> </td>
@@ -64,5 +64,10 @@ export default {
       display: inline-block;
       width: 49%;
       text-align: center;
+  }
+
+  .exercise-title {
+    font-size: 1.4rem;
+    margin: 1rem;
   }
 </style>

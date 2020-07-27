@@ -12,7 +12,7 @@ import Workout from './components/Workout.vue'
 import WorkoutSelector from './components/WorkoutSelector.vue'
 import workouts from './assets/data/workouts.js'
 
-const workoutKeyname = "dividedRoutineDay7";
+const workoutKeyname = "women8WeeksPlanDay6";
 
 export default {
   name: 'App',

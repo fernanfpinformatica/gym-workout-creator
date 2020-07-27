@@ -533,6 +533,267 @@ const workouts = {
       }
     ]
   },
+  women8WeeksPlanDay1: {
+    workoutTableData: {
+      type: "cards",
+      titlesList: [
+        "Ejercicio",
+        "Series-Rep",
+        "Descanso",
+        "Peso",
+      ],
+      weightColumnColespan: 4,
+      exercises: [
+        {
+          title: "20 minutos de cardio (5 min de enfriamiento)",
+        },
+        {
+          imgSrc: require('./../img/Back+Lats/image--009.jpg')
+        },
+        {
+          imgSrc: require('./../img/Biceps/image--030.jpg')
+        },
+        {
+          imgSrc: require('./../img/Triceps/image--017.jpg')
+        },
+        {
+          imgSrc: require('./../img/Shoulders/image--060.jpg')
+        },
+      ]
+    },
+    calloutData: [
+      {
+        title: "🔥 Calentamiento:",
+        listItems: [
+          "10 minutos de cardio (bicicleta estática, elíptica o carrera)",
+          "2 minutos de movilidad articular",
+        ]
+      },
+      {
+        title: "🤸 Después del entrenamiento:",
+        listItems: [
+          "Estiramientos de cada grupo muscular durante 8-10 minutos"
+        ]
+      }
+    ]
+  },
+  women8WeeksPlanDay2: {
+    workoutTableData: {
+      type: "cards",
+      titlesList: [
+        "Ejercicio",
+        "Series-Rep",
+        "Descanso",
+        "Peso",
+      ],
+      weightColumnColespan: 4,
+      exercises: [
+        {
+          imgSrc: require('./../img/Abs+Core/image--026.jpg')
+        },
+        {
+          imgSrc: require('./../img/Abs+Core/image--038-iso.jpg')
+        },
+        {
+          imgSrc: require('./../img/Abs+Core/image--050.jpg')
+        },
+        {
+          imgSrc: require('./../img/Back+Lats/image--024.jpg')
+        },
+        {
+          title: "10 minutos de cardio (5 min de enfriamiento)",
+        },
+      ]
+    },
+    calloutData: [
+      {
+        title: "🔥 Calentamiento:",
+        listItems: [
+          "10 minutos de cardio (bicicleta estática, elíptica o carrera)",
+          "2 minutos de movilidad articular",
+        ]
+      },
+      {
+        title: "🤸 Después del entrenamiento:",
+        listItems: [
+          "Estiramientos de cada grupo muscular durante 8-10 minutos"
+        ]
+      }
+    ]
+  },
+  women8WeeksPlanDay3: {
+    workoutTableData: {
+      type: "cards",
+      titlesList: [
+        "Ejercicio",
+        "Series-Rep",
+        "Descanso",
+        "Peso",
+      ],
+      weightColumnColespan: 4,
+      exercises: [
+        {
+          imgSrc: require('./../img/UpperLegs+Glutes/image--010.jpg')
+        },
+        {
+          imgSrc: require('./../img/UpperLegs+Glutes/image--005.jpg')
+        },
+        {
+          imgSrc: require('./../img/UpperLegs+Glutes/image--017.jpg')
+        },
+        {
+          title: "10 minutos en cinta de correr (5 min de enfriamiento)",
+        },
+      ]
+    },
+    calloutData: [
+      {
+        title: "🔥 Calentamiento:",
+        listItems: [
+          "10 minutos de cardio (bicicleta estática, elíptica o carrera)",
+          "2 minutos de movilidad articular",
+        ]
+      },
+      {
+        title: "🤸 Después del entrenamiento:",
+        listItems: [
+          "Estiramientos de cada grupo muscular durante 8-10 minutos"
+        ]
+      }
+    ]
+  },
+  women8WeeksPlanDay4: {
+    workoutTableData: {
+      type: "cards",
+      titlesList: [
+        "Ejercicio",
+        "Series-Rep",
+        "Descanso",
+        "Peso",
+      ],
+      weightColumnColespan: 4,
+      exercises: [
+        {
+          title: "20 minutos de cardio (5 min de enfriamiento)",
+        },
+        {
+          imgSrc: require('./../img/Biceps/image--034.jpg')
+        },
+        {
+          imgSrc: require('./../img/Chest/image--006.jpg')
+        },
+        {
+          imgSrc: require('./../img/Triceps/image--015.jpg')
+        },
+        {
+          imgSrc: require('./../img/Back+Lats/image--019.jpg')
+        },
+        {
+          imgSrc: require('./../img/Shoulders/image--015.jpg')
+        },
+      ]
+    },
+    calloutData: [
+      {
+        title: "🔥 Calentamiento:",
+        listItems: [
+          "10 minutos de cardio (bicicleta estática, elíptica o carrera)",
+          "2 minutos de movilidad articular",
+        ]
+      },
+      {
+        title: "🤸 Después del entrenamiento:",
+        listItems: [
+          "Estiramientos de cada grupo muscular durante 8-10 minutos"
+        ]
+      }
+    ]
+  },
+  women8WeeksPlanDay5: {
+    workoutTableData: {
+      type: "cards",
+      titlesList: [
+        "Ejercicio",
+        "Series-Rep",
+        "Descanso",
+        "Peso",
+      ],
+      weightColumnColespan: 4,
+      exercises: [
+        {
+          title: "20 minutos de carrera (5 min de enfriamiento)",
+        },
+        {
+          imgSrc: require('./../img/Abs+Core/image--026.jpg')
+        },
+        {
+          imgSrc: require('./../img/Abs+Core/image--038-iso.jpg')
+        },
+        {
+          imgSrc: require('./../img/Abs+Core/image--050.jpg')
+        },
+      ]
+    },
+    calloutData: [
+      {
+        title: "🔥 Calentamiento:",
+        listItems: [
+          "10 minutos de cardio (bicicleta estática, elíptica o carrera)",
+          "2 minutos de movilidad articular",
+        ]
+      },
+      {
+        title: "🤸 Después del entrenamiento:",
+        listItems: [
+          "Estiramientos de cada grupo muscular durante 8-10 minutos"
+        ]
+      }
+    ]
+  },
+  women8WeeksPlanDay6: {
+    workoutTableData: {
+      type: "cards",
+      titlesList: [
+        "Ejercicio",
+        "Series-Rep",
+        "Descanso",
+        "Peso",
+      ],
+      weightColumnColespan: 4,
+      exercises: [
+        {
+          title: "10 minutos en cinta de correr (5 min de enfriamiento)",
+        },
+        {
+          imgSrc: require('./../img/UpperLegs+Glutes/image--010.jpg')
+        },
+        {
+          imgSrc: require('./../img/UpperLegs+Glutes/image--036.jpg')
+        },
+        {
+          imgSrc: require('./../img/Forearms+Calves/image--013.jpg')
+        },
+        {
+          imgSrc: require('./../img/Forearms+Calves/image--012.jpg')
+        },
+      ]
+    },
+    calloutData: [
+      {
+        title: "🔥 Calentamiento:",
+        listItems: [
+          "10 minutos de cardio (bicicleta estática, elíptica o carrera)",
+          "2 minutos de movilidad articular",
+        ]
+      },
+      {
+        title: "🤸 Después del entrenamiento:",
+        listItems: [
+          "Estiramientos de cada grupo muscular durante 8-10 minutos"
+        ]
+      }
+    ]
+  },
 }
 
-  export default workouts;
+export default workouts;

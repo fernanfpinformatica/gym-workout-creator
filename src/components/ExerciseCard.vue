@@ -1,6 +1,7 @@
 <template>
   <div class="exercise-wrapper">
-    <img :src="exercise.imgSrc" />
+    <img v-if="!exercise.title" :src="exercise.imgSrc" />
+    <p v-if="exercise.title">{{ exercise.title }}</p>
     <div class="exercise-name"></div>
   </div>
 </template>
