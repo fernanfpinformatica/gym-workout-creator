@@ -29,6 +29,6 @@ export default {
   .exercise-name {
     border: 2px solid lightgray;
     min-height: 2rem;
-    margin: 1rem 0 .5rem;
+    margin: 1rem .5rem .5rem;
   }
 </style>
